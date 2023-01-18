@@ -126,6 +126,7 @@ input[type="email"] {
 .footer-links li:hover {color:var(--contrast-color)}
 .footer-links li:after{content: "";}
 .footer-content {justify-items: center;display: block;}
+.footer-credits a:hover {color:var(--contrast-color)} 
 #boletin{font-size:14px;}
 .footer-credits {
     text-align: center;

@@ -103,29 +103,30 @@ footer {
     color: var(--text-color-on-black);
     text-align: center;
 }
-.footer-logo {padding-top: 2rem;}
+.footer-logo {padding-top: 2rem; padding-bottom: 1rem;}
 footer a {color: var(--text-color-on-black);text-decoration: none;}
 footer button {
     background-color: var(--contrast-color-2);color: var(--text-color-on-black);
     padding: 10px;margin: 1rem;
 }
-
 footer p {margin:3px;font-size: 12px;}
 
 input[type="email"] {
     border: none;
     border-bottom: 1px solid var(--text-color-on-black);
     background-color: var(--dark-color);
-    color: var(--text-color-on-black);
+    color: var(--text-color);
     width: 30%;
     text-align: center;
     font-size: 1rem;
     margin: 1rem;
 }
-
 .footer-links {margin: 1rem;}
-.footer-links li{list-style: none;font-size: 13px;}
+.footer-links li{margin-bottom: 3px;list-style-type: none;}
+.footer-links li:hover {color:var(--contrast-color)}
+.footer-links li:after{content: "";}
 .footer-content {justify-items: center;display: block;}
+#boletin{font-size:14px;}
 .footer-credits {
     text-align: center;
     font-size: 10px;line-height: 1.5; 
@@ -247,8 +248,7 @@ dd {margin-bottom: 2rem;padding-left: 2.5rem;}
 
 figcaption {font-size: 12px;}
 
-/************************************/
-/**Tablets**/
+/**************Tablets****************/
 @media (min-width: 480px) and (max-width: 960px) {
 main {margin-left: 2rem;margin-right: 2rem;}
 
@@ -275,6 +275,8 @@ div #main-ref {display: flex;flex-wrap: wrap;}
 }
 
 .cientificas { grid-template-columns: repeat(2, 1fr);column-gap: 30px;margin-top:20px}
+
+.footer-links ul li{display: inline;list-style-type: none; margin-bottom: 3px; margin-right: 1rem;}
 }
 
 /**Ordenadores**/
@@ -357,5 +359,5 @@ div #main-ref {display: flex;flex-wrap: wrap;}
 
     .video { width: 70%;}
 
-    .footer-links ul li{display: inline;list-style-type: none;}
+    .footer-links ul li{display: inline;list-style-type: none; margin-bottom: 3px; margin-right: 1rem;}
 }
